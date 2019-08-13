@@ -13,7 +13,7 @@ const Operators = () => {
   return (
     <div className="rightButtons">
        {operators.map((item)=>{
-       return <OperatorButton char={item.char} value={item.value} />
+       return <OperatorButton char={item.char} value={item.value} key={item.value} />
       })}     
     </div>
   );

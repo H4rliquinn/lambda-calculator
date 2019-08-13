@@ -10,14 +10,14 @@ import NumberButton from "./NumberButton.js";
  it any props needed by the child component*/}
 
 
-const Numbers = () => {
+const Numbers = (props) => {
   return (
     <div>
-      {numbers.map((item)=>{
+      {numbers.map((item,index)=>{
        if (item==0){
-        return <NumberButton number={item} className="button number0Button"/>
+        return <NumberButton key={String(item)+String(index)} number={item} className="button number0Button" update={props.update} cv={props.cv}/>
        } else {
-        return <NumberButton number={item} className="button numberButton"/>
+        return <NumberButton key={String(item)+String(index)} number={item} className="button numberButton" update={props.update} cv={props.cv}/>
        }
 
       })}

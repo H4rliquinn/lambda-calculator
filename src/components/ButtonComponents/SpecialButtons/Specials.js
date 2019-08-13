@@ -7,11 +7,12 @@ import SpecialButton from "./SpecialButton.js";
 
 const Specials = () => {
   // STEP 2 - add the imported data to state
-
+  console.log(specials);
   return (
     <div>
-      {specials.map((item)=>{
-       return <SpecialButton special={item} />
+      {specials.map((item,index)=>{
+        console.log(item,index);
+       return <SpecialButton special={item} key={String(index)} />
       })}
     </div>
   );
