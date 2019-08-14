@@ -1,8 +1,12 @@
 import React from "react";
 
 const SpecialButton = (props) => {
+  console.log(props);
   return (
-    <button className="button specialButton" key={props.key} >{props.special}</button>
+    <button 
+    className="button specialButton" 
+    onClick={()=>props.update(props.special)}
+      >{props.special}</button>
   );
 };
 

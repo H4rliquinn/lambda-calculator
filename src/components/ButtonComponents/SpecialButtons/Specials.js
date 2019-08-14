@@ -5,14 +5,14 @@ import SpecialButton from "./SpecialButton.js";
 
 //Import your array data to from the provided data file
 
-const Specials = () => {
+const Specials = (props) => {
   // STEP 2 - add the imported data to state
-  console.log(specials);
+  // console.log(specials);
   return (
     <div>
       {specials.map((item,index)=>{
-        console.log(item,index);
-       return <SpecialButton special={item} key={String(index)} />
+        console.log(item,"*",index);
+       return <SpecialButton special={item} key={item} update={props.update} cv={props.cv}/>
       })}
     </div>
   );
