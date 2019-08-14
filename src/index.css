@@ -10,3 +10,74 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.container{
+  background-color:#a81d36;
+  height:708px;
+  width:469px;
+  margin:30px auto;
+  border-radius:15px;
+  border:1px solid #222425;
+}
+
+.logo-container{
+  padding:20px 0px 0px 20px;
+}
+
+.logo-container img{
+  object-fit:contain;
+  width:122px;
+  
+}
+
+displayTop{
+  display:flex;
+}
+.display{
+  width:380px;
+  height:100px;
+  margin:10px auto;
+  background-color:#323335;
+  border-radius: 50px;
+  line-height:100px;
+  color:white;
+  text-align:right;
+  font-size:3rem;
+  padding-right:20px;
+}
+
+.button{
+  height:85px;
+  width:85px;
+  border-radius:50%;
+  font-size:2rem;
+  color:#f2f2f2;
+  margin:7px 10px;
+}
+.App{
+  display:flex;
+  margin:15px 20px;
+}
+.leftButtons{
+  width:75%;
+}
+.rightButtons{
+  width:25%;
+}
+
+.operatorButton{
+  background-color:#237293;
+}
+.numberButton{
+  background-color:#184379;
+}
+.number0Button{
+  background-color:#184379;
+  width:188px;
+  border-radius:50px;
+
+}
+
+.specialButton{
+  background-color:#225d9e;
+}
